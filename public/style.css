@@ -1,0 +1,100 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: plain, sans-serif;
+  margin: 25px;
+}
+
+h1 {
+  color: transparent;
+  font-weight: 200;
+  -webkit-text-stroke: 1px pink;
+  text-shadow: 2px 2px 0 darkgray;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid pink;
+  color: darkgray;
+}
+
+#spinner {
+  cursor: pointer;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  background-image: url(https://cdn.glitch.com/a4032317-029f-4e09-a7d4-4aae6ccf541c%2Ffidget-spinner-black.png?1494189804078);
+  background-size: 500px 500px;
+  background-position: center;
+}
+
+.spinning {
+  animation: rotate 0.3s linear infinite;
+}
+
+.spin-start {
+  animation: rotate 0.8s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0);}
+  to   { transform: rotate(360deg);}
+}
